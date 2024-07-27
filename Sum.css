@@ -1,0 +1,139 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+}
+
+.result {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.result h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.score-number {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.score-text {
+  font-size: 18px;
+}
+
+.result-text {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.score-info {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.summary {
+  padding: 20px;
+}
+
+.summary h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+.summary-title {
+  font-size: 16px;
+  color: #333;
+}
+
+.summary-score {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.continue-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: #4b6cb7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.continue-btn:hover {
+  background: #182848;
+}
+
+@media (min-width: 768px) {
+  .result-card {
+    flex-direction: row;
+    max-width: 800px;
+  }
+  .result,
+  .summary {
+    width: 50%;
+    padding: 40px;
+  }
+  .result h2,
+  .summary h2 {
+    font-size: 24px;
+  }
+  .result-text,
+  .score-info {
+    font-size: 16px;
+  }
+  .summary-item {
+    font-size: 16px;
+  }
+  .continue-btn {
+    font-size: 16px;
+  }
+}
